@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Redirect;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,4 +16,15 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+
+Route::get('review-qr-link', function () {
+    $url = "https://reviewthis.biz/Deurali-Marwadi-Hotel-and-Restaurant";
+    return Redirect::to($url);
+});
+
+Route::get('menu', function () {
+    $pathToFile = public_path('Deurali Marwadi Menu.pdf');
+    return response()->file($pathToFile);
 });
