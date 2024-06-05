@@ -18,13 +18,20 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/ben', function () {
+    return view('web.index');
+});
 
 Route::get('review-qr-link', function () {
-    $url = "https://reviewthis.biz/Deurali-Marwadi-Hotel-and-Restaurant";
+    $url = env('REVIEW_URL');
     return Redirect::to($url);
 });
 
 Route::get('menu', function () {
     $pathToFile = public_path('Deurali Marwadi Menu.pdf');
     return response()->file($pathToFile);
+});
+
+Route::get('connect', function () {
+    return view('connect');
 });
