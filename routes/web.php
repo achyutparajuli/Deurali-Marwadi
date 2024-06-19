@@ -14,24 +14,29 @@ use Illuminate\Support\Facades\Redirect;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/ben', function () {
+Route::get('/', function ()
+{
     return view('web.index');
 });
 
-Route::get('review-qr-link', function () {
+Route::get('/ben', function ()
+{
+    return view('web.index');
+});
+
+Route::get('review-qr-link', function ()
+{
     $url = env('REVIEW_URL');
     return Redirect::to($url);
 });
 
-Route::get('menu', function () {
+Route::get('menu', function ()
+{
     $pathToFile = public_path('Deurali Marwadi Menu.pdf');
     return response()->file($pathToFile);
-});
+})->name('menu');
 
-Route::get('connect', function () {
+Route::get('connect', function ()
+{
     return view('connect');
 });
