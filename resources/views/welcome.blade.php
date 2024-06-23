@@ -63,7 +63,7 @@
     <p>Sorry for the inconvenience. The website is currently undergoing maintenance.</p>
 
     <div class="social-links">
-        <a href="https://www.instagram.com/deuralimarwadi" target="_blank" title="Instagram">
+        <a href="{{ env('INSTAGRAM_URL') }}" target="_blank" title="Instagram">
             <i class="fab fa-instagram"></i>
         </a>
     </div>

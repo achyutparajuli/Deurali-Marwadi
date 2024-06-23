@@ -1,0 +1,62 @@
+[
+    {
+        "name": "PANEER BUTTER MASALA",
+        "short_desc": "Creamy paneer in a rich buttery tomato sauce.",
+        "image": "assets/web/img/hero.png",
+        "price": 90
+    },
+    {
+        "name": "MATAR PANEER",
+        "short_desc": "Paneer and peas cooked in a spiced tomato gravy.",
+        "image": "assets/web/img/hero.png",
+        "price": 365
+    },
+    {
+        "name": "PALAK PANEER (SEASONAL)",
+        "short_desc": "Paneer and spinach cooked in a flavorful gravy.",
+        "image": "assets/web/img/hero.png",
+        "price": 345
+    },
+    {
+        "name": "PANEER BHURJI",
+        "short_desc": "Spicy scrambled paneer with onions and tomatoes.",
+        "image": "assets/web/img/hero.png",
+        "price": 100
+    },
+    {
+        "name": "MATAR MUSHROOM",
+        "short_desc": "Mushrooms and peas cooked in a spiced gravy.",
+        "image": "assets/web/img/hero.png",
+        "price": 365
+    },
+    {
+        "name": "PALAK MUSHROOM (SEASONAL)",
+        "short_desc": "Mushrooms and spinach cooked in a flavorful gravy.",
+        "image": "assets/web/img/hero.png",
+        "price": 355
+    },
+    {
+        "name": "RAJMA MASALA",
+        "short_desc": "Kidney beans cooked in a spicy tomato gravy.",
+        "image": "assets/web/img/hero.png",
+        "price": 290
+    },
+    {
+        "name": "PANEER DO PYAZA",
+        "short_desc": "Paneer cooked with onions and spices.",
+        "image": "assets/web/img/hero.png",
+        "price": 390
+    },
+    {
+        "name": "ALU JEERA",
+        "short_desc": "Potatoes sautéed with cumin seeds and spices.",
+        "image": "assets/web/img/hero.png",
+        "price": 255
+    },
+    {
+        "name": "ALU PALAK",
+        "short_desc": "Potatoes and spinach cooked in a flavorful gravy.",
+        "image": "assets/web/img/hero.png",
+        "price": 255
+    }
+]

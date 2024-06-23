@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Redirect;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,29 +15,10 @@ use Illuminate\Support\Facades\Redirect;
 |
 */
 
-Route::get('/', function ()
-{
-    return view('web.index');
-});
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
-Route::get('/ben', function ()
-{
-    return view('web.index');
-});
+Route::get('/eview-qr-link', [HomeController::class, 'review']);
 
-Route::get('review-qr-link', function ()
-{
-    $url = env('REVIEW_URL');
-    return Redirect::to($url);
-});
+Route::get('menu', [HomeController::class, 'menu'])->name('menu');
 
-Route::get('menu', function ()
-{
-    $pathToFile = public_path('Deurali Marwadi Menu.pdf');
-    return response()->file($pathToFile);
-})->name('menu');
-
-Route::get('connect', function ()
-{
-    return view('connect');
-});
+Route::get('connect', [HomeController::class, 'connect'])->name('connect');

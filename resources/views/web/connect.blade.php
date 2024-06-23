@@ -47,20 +47,20 @@
 <body>
     <div class="row" style="max-width: 100%;">
         <div class="col-lg-8 col-10 offset-lg-2 offset-1">
-            <a href="#" class="social-button">
+            <a href="{{ env('WEBSITE_URL') }}" target="_blank" class="social-button">
                 Visit Our Website
             </a>
-            <a href="#" class="social-button">
+            <a href="{{ env('REVIEW_URL') }}" target="_blank" class="social-button">
                 Review us on Google
             </a>
-            <a href="#" class="social-button">
+            <a href="{{ route('menu') }}" target="_blank" class="social-button">
                 Check Our Menu
             </a>
-            <a href="#" class="social-button">
+            <a href="{{ env('FACEBOOK_URL') }}" target="_blank" class="social-button">
                 Follow Us On Facebook
             </a>
 
-            <a href="#" class="social-button">
+            <a href="{{ env('INSTAGRAM_URL') }}" target="_blank" class="social-button">
                 Follow Us On Instagram
             </a>
         </div>
