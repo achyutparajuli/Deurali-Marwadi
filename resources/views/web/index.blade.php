@@ -58,21 +58,15 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0 pe-4">
                         <a href="{{ route('home') }}" class="nav-item nav-link active">Home</a>
-                        <a href="#about-div" class="nav-item nav-link">About</a>
-                        <!-- <a href="service.html" class="nav-item nav-link">Service</a> -->
-                        <!-- <a href="menu.html" class="nav-item nav-link">Menu</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                            <div class="dropdown-menu m-0">
-                                <a href="booking.html" class="dropdown-item">Booking</a>
-                                <a href="team.html" class="dropdown-item">Our Team</a>
-                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                            </div>
-                        </div> -->
-                        <a href="#contact-div" class="nav-item nav-link">Contact</a>
+                        <a href="#about-section" class="nav-item nav-link">About</a>
+                        <a href="#popular-items-section" class="nav-item nav-link">Popular Items<span
+                                class="blink-dot"><span class="circle"></span></span></a>
+                        <a href="#contact-section" class="nav-item nav-link">Contact</a>
+                        <a href="#find-us-section" class="nav-item nav-link">Find Us</a>
                     </div>
-                    <a href="" class="btn btn-primary py-2 px-4">Book A Table</a>
+                    <a href="#contact-section" class="btn btn-primary py-2 px-4 book-a-table">Book A Table</a>
                 </div>
+
             </nav>
 
             <div class="container-xxl py-5 bg-dark hero-header mb-5">
@@ -86,8 +80,8 @@
                                 destination for exquisite Indian mithai and savory delights, coupled with the opulence
                                 of hotel luxury stays.
                             </p>
-                            <a href="{{ route('menu') }}" target="_blank"
-                                class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">See our
+                            <a href="#popular-items-section"
+                                class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">Explore our delightful
                                 menu</a>
                         </div>
                         <div class="col-lg-6 text-center text-lg-end overflow-hidden">
@@ -159,7 +153,7 @@
 
 
         <!-- About Start -->
-        <div class="container-xxl py-5" id="about-div">
+        <div class="container-xxl py-5" id="about-section">
             <div class="container">
                 <div class="row g-5 align-items-center">
                     <div class="col-lg-6">
@@ -220,7 +214,8 @@
                                 </div>
                             </div>
                         </div>
-                        <a class="btn btn-primary py-3 px-5 mt-2" href="">Read More</a>
+                        <a class="btn btn-primary py-3 px-5 mt-2" href="#popular-items-section">Explore our delightful
+                            menu</a>
                     </div>
                 </div>
             </div>
@@ -229,18 +224,19 @@
 
 
         <!-- Menu Start -->
-        <div class="container-xxl py-5">
-            <div class="container">
+        <div class="container-xxl py-5" id="popular-items-section" style="padding-top: 6rem !important;">
+            <div class=" container">
                 <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                     <h5 class="section-title ff-secondary text-center text-primary fw-normal">Food Menu</h5>
-                    <h1 class="mb-5">Most Popular Items</h1>
+                    <h1 class="mb-5">Most Popular Items <a href="{{ route('menu') }}" class="see-all-menu"
+                            target="_blank">See All</a></h1>
                 </div>
                 <div class="tab-class text-center wow fadeInUp" data-wow-delay="0.1s">
                     <ul class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
                         <li class="nav-item">
                             <a class="d-flex align-items-center text-start mx-3 ms-0 pb-3 active" data-bs-toggle="pill"
                                 href="#tab-1">
-                                <i class="fa fa-coffee fa-2x text-primary"></i>
+                                <i class="fa fa-utensils fa-2x text-primary"></i>
                                 <div class="ps-3">
                                     <small class="text-body">Popular</small>
                                     <h6 class="mt-n1 mb-0">Mithai Moments</h6>
@@ -337,7 +333,8 @@
 
 
         <!-- Reservation Start -->
-        <div class="container-xxl py-5 px-0 wow fadeInUp" id="contact-div" data-wow-delay="0.1s">
+        <div class="container-xxl py-5 px-0 wow fadeInUp" id="contact-section" data-wow-delay="0.1s">
+            <div class="container-xxl py-5"></div>
             <div class="row g-0">
                 <div class="col-md-6">
                     <div class="video">
@@ -351,25 +348,35 @@
                     <div class="p-5 wow fadeInUp" data-wow-delay="0.2s">
                         <h5 class="section-title ff-secondary text-start text-primary fw-normal">Any Queries?</h5>
                         <h1 class="text-white mb-4">Tell Us How You Felt</h1>
-                        <form>
+                        <form action="{{ route('send-message') }}" method="POST">
+                            @csrf
                             <div class="row g-3">
                                 <div class="col-md-12">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                        <label for="name">Your Name</label>
+                                        <input type="text" class="form-control" id="name" placeholder="Your Name"
+                                            name="name" required>
+                                        <label for="name">Your Name *</label>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-floating">
-                                        <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                        <label for="email">Your Email</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Your Email"
+                                            name="email" required>
+                                        <label for="email">Your Email *</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-floating">
+                                        <input type="subject" class="form-control form-subject" id="subject"
+                                            placeholder="Your subject" name="subject" required>
+                                        <label for="subject">Your Subject *</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <textarea class="form-control" placeholder="Message" id="message"
-                                            style="height: 100px"></textarea>
-                                        <label for="message">Message</label>
+                                        <textarea class="form-control form-message" placeholder="Message" id="message"
+                                            style="height: 100px" name="message" required></textarea>
+                                        <label for="message">Message *</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
@@ -381,30 +388,40 @@
                 </div>
             </div>
         </div>
-
-        <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content rounded-0">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <!-- 16:9 aspect ratio -->
-                        <div class="ratio ratio-16x9">
-                            <iframe class="embed-responsive-item" src="" id="video" allowfullscreen
-                                allowscriptaccess="always" allow="autoplay"></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <!-- Reservation Start -->
 
     </div>
     </div>
     <!-- Team End -->
 
+    <!-- Contact Start -->
+    <div class="container-xxl py-5" id="find-us-section" style="padding-top: 6rem !important;">
+
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h5 class="section-title ff-secondary text-center text-primary fw-normal">Out Location</h5>
+                <h1 class="mb-5">Find us on Google</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 wow fadeIn map-div text-center" data-wow-delay="0.1s">
+                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Rastrya bank Outlet</h5>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d28129.653065209473!2d83.971529!3d28.201034!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399595006ac8317f%3A0x3ece11a27d67528!2sDeurali%20Marwadi%20Hotel%20and%20Restaurant!5e0!3m2!1sen!2snp!4v1719141120643!5m2!1sen!2snp"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div class="col-md-6 wow fadeIn map-div text-center" data-wow-delay="0.1s">
+                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Chipledunga Outlet</h5>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d439.43190945989346!2d83.989064!3d28.223858!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399595cc281b4247%3A0x6b35b8626e3dd681!2sHotel%20Deurali!5e0!3m2!1sen!2snp!4v1719141149277!5m2!1sen!2snp"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
 
     <!-- Testimonial Start -->
     <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
@@ -435,36 +452,47 @@
     <!-- Testimonial End -->
 
 
+
+
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-4 col-md-6">
                     <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Company</h4>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Reservation</a>
-                    <a class="btn btn-link" href="">Privacy Policy</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a href="#about-section" class="btn btn-link">About</a>
+                    <a href="#popular-items-section" class="btn btn-link">Popular Items</a>
+                    <a href="#contact-section" class="btn btn-link">Contact</a>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Contact</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>
+                        Rastrabank Chowk , Pokhara
+                    </p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>
+                        <a class="all-unset" href="tel:+977 61-450576">+977 61-450576</a>
+                    </p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>
+                        <a href="mailto:deuralimarwadi@gmail.com" class="all-unset">{{ env('GMAIL') }}</a>
+                    </p>
                     <div class="d-flex pt-2">
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="{{ env('INSTAGRAM_URL') }}" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="{{ env('FACEBOOK_URL') }}" target="_blank"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="mailto:{{ env('GMAIL') }}" target="_blank"><i
+                                class="fab fa-google"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="{{ route('connect') }}" target="_blank"><i
+                                class="fas fa-link"></i>
+                        </a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Opening</h4>
-                    <h5 class="text-light fw-normal">Monday - Saturday</h5>
-                    <p>09AM - 09PM</p>
-                    <h5 class="text-light fw-normal">Sunday</h5>
-                    <p>10AM - 08PM</p>
+                    <h5 class="text-light fw-normal">Sunday - Friday</h5>
+                    <p>08AM - 09PM</p>
+                    <h5 class="text-light fw-normal">Saturday</h5>
+                    <p>9AM - 8PM</p>
                 </div>
                 <div class="col-lg-3 col-md-6 d-none">
                     <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Newsletter</h4>
@@ -479,20 +507,12 @@
             </div>
         </div>
         <div class="container">
-            <div class="copyright">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+            <div class="copyright pb-4">
+                <div class="row mb-3">
+                    <div class="col-md-12 text-center mb-4 mb-md-0">
                         © {{ env('APP_NAME') }} {{ date('Y') }}, All Right Reserved.
                         Powered By <a class="border-bottom" href="https://achyutparajuli.com.np" target="_blank">Achyut
                             Parajuli</a>
-                    </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <div class="footer-menu">
-                            <a href="">Home</a>
-                            <a href="">Cookies</a>
-                            <a href="">Help</a>
-                            <a href="">FQAs</a>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -519,6 +539,20 @@
 
     <!-- Template Javascript -->
     <script src="{{ asset('assets/web/js/main.js') }}"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('body').on('click', '.nav-link', function (event) {
+                $('.nav-link').removeClass('active');
+                $(this).addClass('active');
+            });
+
+            $('body').on('click', '.book-a-table', function (event) {
+                $('.form-subject').val('Regarding Booking a Table.');
+                $('.form-message').val('I kindly request confirmation of my reservation. Please contact me at your earliest convenience to discuss further details.');
+            });
+        });
+    </script>
 </body>
 
 </html>

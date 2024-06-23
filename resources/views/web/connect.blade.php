@@ -2,11 +2,15 @@
 <html>
 
 <head>
-    <title>Social Media Buttons</title>
+    <title>Connect | {{ env("APP_NAME") }} </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
 
     <style>
+        body {
+            background-color: #feaa2d;
+        }
+
         .social-button {
             display: block;
             margin: 10px;
@@ -29,16 +33,15 @@
             margin-top: 5%;
         }
 
+        .logo {
+            height: 10rem;
+            max-width: 100%;
+        }
+
         @media screen and (max-width: 992px) {
             .social-button {
                 margin: 30px;
-            }
-        }
-
-        /* On screens that are 600px or less, set the background color to olive */
-        @media screen and (max-width: 600px) {
-            body {
-                background-color: olive;
+                padding: 6% 5%;
             }
         }
     </style>
@@ -46,7 +49,8 @@
 
 <body>
     <div class="row" style="max-width: 100%;">
-        <div class="col-lg-8 col-10 offset-lg-2 offset-1">
+        <div class="col-lg-8 col-10 offset-lg-2 offset-md-1 offset-sm-0 text-center">
+            <img src="{{ asset('assets/web/img/logo.png') }}" class="logo" alt="Logo">
             <a href="{{ env('WEBSITE_URL') }}" target="_blank" class="social-button">
                 Visit Our Website
             </a>

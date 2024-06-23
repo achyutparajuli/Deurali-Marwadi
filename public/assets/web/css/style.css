@@ -415,7 +415,7 @@
 
 /*** Footer ***/
 .footer .btn.btn-social {
-    margin-right: 5px;
+    margin-right: 15px;
     width: 35px;
     height: 35px;
     display: flex;
@@ -476,4 +476,43 @@
     margin-right: 0;
     padding-right: 0;
     border-right: none;
+}
+
+.all-unset {
+    all: unset !important;
+    cursor: pointer !important;
+}
+
+/* Define the styles for the blinking dot */
+.blink-dot {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 50%;
+    animation: blink 1s infinite;
+    margin-left: 4px;
+    /* Adjust the spacing between text and dot as needed */
+}
+
+/* Keyframes for blinking animation */
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+.map-div iframe {
+    width: 100%;
+}
+
+.see-all-menu {
+    font-size: 20px;
+    text-decoration: underline;
 }
