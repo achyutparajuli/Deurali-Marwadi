@@ -516,3 +516,10 @@
     font-size: 20px;
     text-decoration: underline;
 }
+
+.service-item .p-4 p,
+#about-section .container p,
+.hero-header .container div p,
+.testimonial-item p {
+    text-align: justify;
+}

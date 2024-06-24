@@ -3,7 +3,7 @@
         "name": "PANEER BUTTER MASALA",
         "short_desc": "Creamy paneer in a rich buttery tomato sauce.",
         "image": "assets/web/img/hero.png",
-        "price": 90
+        "price": 390
     },
     {
         "name": "MATAR PANEER",
@@ -21,7 +21,7 @@
         "name": "PANEER BHURJI",
         "short_desc": "Spicy scrambled paneer with onions and tomatoes.",
         "image": "assets/web/img/hero.png",
-        "price": 100
+        "price": 290
     },
     {
         "name": "MATAR MUSHROOM",

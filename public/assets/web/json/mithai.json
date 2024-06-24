@@ -24,10 +24,10 @@
         "price": 100
     },
     {
-        "name": "RASMALAI",
-        "short_desc": "Delicate milk-based dessert.",
+        "name": "Kaju Katli",
+        "short_desc": "Delicate Cashew based dessert.",
         "image": "assets/web/img/hero.png",
-        "price": 100
+        "price": 50
     },
     {
         "name": "MALAI CUP",

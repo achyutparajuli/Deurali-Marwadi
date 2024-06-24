@@ -84,7 +84,7 @@
                                 class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">Explore our delightful
                                 menu</a>
                         </div>
-                        <div class="col-lg-6 text-center text-lg-end overflow-hidden">
+                        <div class="col-lg-6 text-center text-lg-end overflow-hidden d-none d-md-block d-lg-block">
                             <img class="img-fluid" src="{{ asset('assets/web/img/hero.png') }}" alt="">
                         </div>
                     </div>
@@ -333,10 +333,11 @@
 
 
         <!-- Reservation Start -->
-        <div class="container-xxl py-5 px-0 wow fadeInUp" id="contact-section" data-wow-delay="0.1s">
-            <div class="container-xxl py-5"></div>
+        <div class="container-xxl py-5 px-0 wow fadeInUp" id="contact-section" data-wow-delay="0.1s"
+            style="padding-top: unset !important;">
+            <div class="container-xxl py-5" style="padding-top: unset !important;"></div>
             <div class="row g-0">
-                <div class="col-md-6">
+                <div class="col-md-6 d-none d-md-block d-lg-block">
                     <div class="video">
                         <!-- <button type="button" class="btn-play" data-bs-toggle="modal"
                             data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
