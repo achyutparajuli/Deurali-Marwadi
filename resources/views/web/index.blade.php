@@ -92,7 +92,7 @@
                                 destination for exquisite Indian mithai and savory delights, coupled with the opulence
                                 of hotel luxury stays.
                             </p>
-                            <a href="#popular-items-section"
+                            <a href="{{ route('menu') }}"
                                 class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">Explore our delightful
                                 menu</a>
                         </div>
@@ -215,7 +215,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a class="btn btn-primary py-3 px-5 mt-2" href="#popular-items-section">Explore our delightful
+                        <a class="btn btn-primary py-3 px-5 mt-2" href="{{ route('menu') }}">Explore our delightful
                             menu</a>
                     </div>
                 </div>
