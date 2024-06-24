@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Redirect;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +15,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [HomeController::class, 'index'])->name('home');
+
+Route::get('/eview-qr-link', [HomeController::class, 'review']);
+
+Route::get('menu', [HomeController::class, 'menu'])->name('menu');
+
+Route::get('connect', [HomeController::class, 'connect'])->name('connect');
+
+
+// send email
+Route::post('/send-message', 'App\Http\Controllers\EmailController@send')->name('send-message');

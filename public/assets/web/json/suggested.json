@@ -1,0 +1,62 @@
+[
+    {
+        "name": "PAU BHAJI",
+        "short_desc": "Spicy mashed vegetables served with bread.",
+        "image": "assets/web/img/hero.png",
+        "price": 220
+    },
+    {
+        "name": "PANEER KATHI ROLL",
+        "short_desc": "Grilled paneer wrapped in a thin flatbread.",
+        "image": "assets/web/img/hero.png",
+        "price": 255
+    },
+    {
+        "name": "CHILLY MOMO",
+        "short_desc": "Steamed dumplings tossed in spicy sauce.",
+        "image": "assets/web/img/hero.png",
+        "price": 230
+    },
+    {
+        "name": "SPECIAL DOSA",
+        "short_desc": "Crispy crepe filled with a special potato mixture.",
+        "image": "assets/web/img/hero.png",
+        "price": 340
+    },
+    {
+        "name": "MASALA DOSA ",
+        "short_desc": "Thin crepe filled with spiced potatoes.",
+        "image": "assets/web/img/hero.png",
+        "price": 230
+    },
+    {
+        "name": "CHOLE BHATURE",
+        "short_desc": "Fried bread served with spicy chickpeas.",
+        "image": "assets/web/img/hero.png",
+        "price": 220
+    },
+    {
+        "name": "PAPDI CHAAT",
+        "short_desc": "Crunchy snack topped with yogurt and chutney.",
+        "image": "assets/web/img/hero.png",
+        "price": 175
+    },
+    {
+        "name": "CHEESE BURGER ",
+        "short_desc": "Juicy burger with melted cheese.",
+        "image": "assets/web/img/hero.png",
+        "price": 245
+    },
+    {
+        "name": "IDLY/WADA SAMBHAR",
+        "short_desc": "Steamed rice cakes and lentil donuts with sambar.",
+        "image": "assets/web/img/hero.png",
+        "price": 230
+    },
+    {
+        "name": "MANGO Lassi",
+        "short_desc": "Refreshing yogurt-based drink with mango.",
+        "image": "assets/web/img/hero.png",
+        "price": 215
+    }
+]

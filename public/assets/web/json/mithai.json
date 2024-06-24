@@ -1,0 +1,62 @@
+[
+    {
+        "name": "MALAI CHAMCHAM",
+        "short_desc": "Soft cream-filled dessert.",
+        "image": "assets/web/img/hero.png",
+        "price": 130
+    },
+    {
+        "name": "KANPURI LADDU",
+        "short_desc": "Traditional round sweet.",
+        "image": "assets/web/img/hero.png",
+        "price": 40
+    },
+    {
+        "name": "KHUWA CHAMCHAM",
+        "short_desc": "Milk-based sweet.",
+        "image": "assets/web/img/hero.png",
+        "price": 75
+    },
+    {
+        "name": "RASMALAI",
+        "short_desc": "Delicate milk-based dessert.",
+        "image": "assets/web/img/hero.png",
+        "price": 100
+    },
+    {
+        "name": "Kaju Katli",
+        "short_desc": "Delicate Cashew based dessert.",
+        "image": "assets/web/img/hero.png",
+        "price": 50
+    },
+    {
+        "name": "MALAI CUP",
+        "short_desc": "Creamy dessert in a cup.",
+        "image": "assets/web/img/hero.png",
+        "price": 150
+    },
+    {
+        "name": "KALAKAND",
+        "short_desc": "Soft milk cake.",
+        "image": "assets/web/img/hero.png",
+        "price": 40
+    },
+    {
+        "name": "Barfi",
+        "short_desc": "Traditional Indian sweet squares.",
+        "image": "assets/web/img/hero.png",
+        "price": 40
+    },
+    {
+        "name": "Peda",
+        "short_desc": "Soft milk fudge.",
+        "image": "assets/web/img/hero.png",
+        "price": 40
+    },
+    {
+        "name": "LALMOHAN",
+        "short_desc": "Spongy syrup-soaked sweet.",
+        "image": "assets/web/img/hero.png",
+        "price": 40
+    }
+]

@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Shiva Baral",
+        "image": "assets/web/img/guest-user.jpg",
+        "review": "Delicious food with authentic flavors! Loved the Paneer Butter Masala and Malai Chamcham. Definitely coming back.",
+        "profession": "Entrepreneur"
+    },
+    {
+        "name": "Ashwin Karki",
+        "image": "assets/web/img/guest-user.jpg",
+        "review": "Outstanding service and great ambiance. The Matar Paneer and Rasmalai are must-tries!",
+        "profession": "Social Activist"
+    },
+    {
+        "name": "Sazan Bhujel",
+        "image": "assets/web/img/guest-user.jpg",
+        "review": "Visited Deurali Marwadi for the first time and was impressed by the variety of sweets. The Kanpuri Laddu and Peda were delightful.",
+        "profession": "Event Planner"
+    },
+    {
+        "name": "Bishal Raj Poudel",
+        "image": "assets/web/img/guest-user.jpg",
+        "review": "As someone who loves Indian cuisine, I can say this place exceeded my expectations. The Rajma Masala and Special Dosa were phenomenal.",
+        "profession": "IT Professional"
+    },
+    {
+        "name": "Sujal Poudel",
+        "image": "assets/web/img/guest-user.jpg",
+        "review": "Authentic Marwadi cuisine in a cozy setting. Loved the Aloo Palak and the variety of sweets available. Highly recommend!",
+        "profession": "Banker"
+    }
+]
