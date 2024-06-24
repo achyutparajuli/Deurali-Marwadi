@@ -2,14 +2,26 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ env('APP_NAME') }}</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
-
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <meta name="description"
+        content="Experience the taste of authentic Indian sweets and Marwadi cuisine at {{ env('APP_NAME') }}. Enjoy traditional dishes, comfortable stays, and exceptional hospitality.">
+    <meta name="keywords"
+        content="Indian sweets, Marwadi cuisine, authentic Indian food, traditional Indian sweets, Marwadi dishes, Indian restaurant, Marwadi restaurant, Indian hotel, Marwadi hotel, Indian desserts">
+    <meta name="author" content="{{ env('APP_NAME') }}Name]">
+    <meta property="og:title" content="Authentic Indian Sweets and Marwadi Cuisine | {{ env('APP_NAME') }}">
+    <meta property="og:description"
+        content="Experience the taste of authentic Indian sweets and Marwadi cuisine at {{ env('APP_NAME') }}. Enjoy traditional dishes, comfortable stays, and exceptional hospitality.">
+    <meta property="og:image" content="{{ asset('assets/web/img/logo.png') }}">
+    <meta property="og:url" content="{{ url('/') }}">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Authentic Indian Sweets and Marwadi Cuisine | {{ env('APP_NAME') }}">
+    <meta name="twitter:description"
+        content="Experience the taste of authentic Indian sweets and Marwadi cuisine at {{ env('APP_NAME') }}. Enjoy traditional dishes, comfortable stays, and exceptional hospitality.">
+    <link rel="canonical" href="{{ url('/') }}">
+    <link rel="icon" href="{{ asset('assets/web/img/logo.png') }}">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
