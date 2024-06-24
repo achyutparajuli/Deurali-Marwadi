@@ -224,7 +224,7 @@
 
 
         <!-- Menu Start -->
-        <div class="container-xxl py-5" id="popular-items-section" style="padding-top: 6rem !important;">
+        <div class="container-xxl py-5" id="popular-items-section">
             <div class=" container">
                 <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                     <h5 class="section-title ff-secondary text-center text-primary fw-normal">Food Menu</h5>
@@ -396,7 +396,7 @@
     <!-- Team End -->
 
     <!-- Contact Start -->
-    <div class="container-xxl py-5" id="find-us-section" style="padding-top: 6rem !important;">
+    <div class="container-xxl py-5" id="find-us-section">
 
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
