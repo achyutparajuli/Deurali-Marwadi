@@ -110,51 +110,40 @@
         <div class="container-xxl py-5">
             <div class="container">
                 <div class="row g-4">
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="service-item rounded pt-3">
-                            <div class="p-4">
-                                <i class="fa fa-3x fa-user-tie text-primary mb-4"></i>
-                                <h5>Master Chefs</h5>
-                                <p>Our master chefs craft exquisite mithai and sweets, blending traditional recipes with
-                                    innovative techniques to create
-                                    unforgettable flavors, stunning presentations, and exceptional experiences.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="service-item rounded pt-3">
                             <div class="p-4">
                                 <i class="fa fa-3x fa-utensils text-primary mb-4"></i>
                                 <h5>Quality Food</h5>
-                                <p>Our commitment to quality food ensures that each mithai and sweet is crafted using
+                                <p>Our commitment to quality food ensures that each mithai and dish is crafted using
                                     the finest ingredients, offering a
                                     delightful and authentic taste experience with every bite.
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="service-item rounded pt-3">
                             <div class="p-4">
                                 <i class="fa fa-3x fa-cart-plus text-primary mb-4"></i>
                                 <h5>Online Order</h5>
-                                <p>Experience the convenience of online ordering with our mithai and sweets restaurant,
+                                <p>Experience the convenience of online ordering with our mithai and snacks restaurant,
                                     allowing you to savor our
                                     delightful treats from the comfort of your home with just a few clicks.
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
                         <div class="service-item rounded pt-3">
                             <div class="p-4">
                                 <i class="fa fa-3x fa-check text-primary mb-4"></i>
                                 <h5>Quality Service
                                 </h5>
-                                <p>For quality service in our mithai and sweets restaurant, we prioritize using the
-                                    finest ingredients and ensuring each
-                                    confection is crafted with meticulous attention to detail.</p>
+                                <p>For exceptional service in our mithai and snacks restaurant, we prioritize highly
+                                    trained staff and a welcoming
+                                    environment, ensuring each guest enjoys an impeccable dining experience.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -412,12 +401,13 @@
 
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h5 class="section-title ff-secondary text-center text-primary fw-normal">Out Location</h5>
+                <h5 class="section-title ff-secondary text-center text-primary fw-normal">Our Location</h5>
                 <h1 class="mb-5">Find us on Google</h1>
             </div>
             <div class="row g-4">
                 <div class="col-md-6 wow fadeIn map-div text-center" data-wow-delay="0.1s">
-                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Rastrya bank Outlet</h5>
+                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Rastra Bank chowk Outlet
+                    </h5>
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d28129.653065209473!2d83.971529!3d28.201034!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399595006ac8317f%3A0x3ece11a27d67528!2sDeurali%20Marwadi%20Hotel%20and%20Restaurant!5e0!3m2!1sen!2snp!4v1719141120643!5m2!1sen!2snp"
                         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
