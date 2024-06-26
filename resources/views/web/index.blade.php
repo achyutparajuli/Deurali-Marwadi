@@ -513,8 +513,9 @@
             <div class="copyright pb-4">
                 <div class="row mb-3">
                     <div class="col-md-12 text-center mb-4 mb-md-0">
-                        © {{ env('APP_NAME') }} {{ date('Y') }}, All Right Reserved.
-                        Powered By <a class="border-bottom" href="https://achyutparajuli.com.np" target="_blank">Achyut
+                        Copyright © {{ date('Y') }} {{ env('APP_NAME') }}. |
+                        Developed By: <a class="border-bottom" href="https://achyutparajuli.com.np"
+                            target="_blank">Achyut
                             Parajuli</a>
                     </div>
                 </div>
