@@ -17,7 +17,7 @@ use App\Http\Controllers\HomeController;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
-Route::get('/eview-qr-link', [HomeController::class, 'review']);
+Route::get('/review-qr-link', [HomeController::class, 'review']);
 
 Route::get('menu', [HomeController::class, 'menu'])->name('menu');
 
